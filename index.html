@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>First Challenge</title>
+</head>
+<body>
+
+    <div class="container">
+        <header class="topbar">
+            <div class="logo">
+                <h1> <img src="images/logo.svg" alt="">
+            </div>
+            <button class="theme-button" onclick="toggleTheme()">
+                <img src="images/icon-sun.svg" alt="sun" class="sun-icon">
+                <img src="images/icon-moon.svg" alt="moon" class="moon-icon">
+            </button>
+        </header>
+    </div>
+    
+        <div class="filters-section">
+            <h1 class="filters-title"><h1>Extensions List</h1></h1>
+
+            <div class="filters">
+                <button class="filter-button active">All</button>
+                <button class="filter-button">Active</button>
+                <button class="filter-button">Inactive</button>
+            </div>
+        </div>
+        
+        <div class="extensions-list">
+            <div class="extension-card active">
+                <div class="icon"><img src="images/logo-devlens.svg" alt=""></div>
+                <div class="info">
+                    <h4>DevLens</h4>
+                    <p>Quickly inspect page layouts and visualize element boundaries.</p>
+                </div>
+                <div class="actions">
+                    <button class="remove-button">Remove</button>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        
+            <div class="extension-card active">
+                <div class="icon"><img src="images/logo-style-spy.svg" alt=""></div>
+                <div class="info">
+                    <h4>StyleSpy</h4>
+                    <p>Instantly analyze and copy CSS from any webpage element.</p>
+                </div>
+                <div class="actions">
+                    <button class="remove-button">Remove</button>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        
+            <div class="extension-card active">
+                <div class="icon"><img src="images/logo-speed-boost.svg" alt=""></div>
+                <div class="info">
+                    <h4>SpeedBoost</h4>
+                    <p>Optimizes browser resource usage to accelerate page loading.</p>
+                </div>
+                <div class="actions">
+                    <button class="remove-button">Remove</button>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        
+            <div class="extension-card active">
+                <div class="icon"><img src="images/logo-json-wizard.svg" alt=""></div>
+                <div class="info">
+                    <h4>JSONWizard</h4>
+                    <p>Formats, validates, and prettifies JSON responses in-browser.</p>
+                </div>
+                <div class="actions">
+                    <button class="remove-button">Remove</button>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        
+            <div class="extension-card active">
+                <div class="icon"><img src="images/logo-tab-master-pro.svg" alt=""></div>
+                <div class="info">
+                    <h4>TabMaster Pro</h4>
+                    <p>Organizes browser tabs into groups and sessions.</p>
+                </div>
+                <div class="actions">
+                    <button class="remove-button">Remove</button>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        
+            <div class="extension-card active">
+                <div class="icon"><img src="images/logo-viewport-buddy.svg" alt=""></div>
+                <div class="info">
+                    <h4>ViewportBuddy</h4>
+                    <p>Simulates various screen resolutions directly within the browser.</p>
+                </div>
+                <div class="actions">
+                    <button class="remove-button">Remove</button>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="extension-card active">
+                <div class="icon"><img src="images/logo-markup-notes.svg" alt=""></div>
+                <div class="info">
+                    <h4>Markup Notes</h4>
+                    <p>Enables annotation and notes directly onto webpages for collaborative debugging.</p>
+                </div>
+                <div class="actions">
+                    <button class="remove-button">Remove</button>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="extension-card active">
+                <div class="icon"><img src="images/logo-grid-guides.svg" alt=""></div>
+                <div class="info">
+                    <h4>GridGuides</h4>
+                    <p>Overlay customizable grids and alignment guides on any webpage.</p>
+                </div>
+                <div class="actions">
+                    <button class="remove-button">Remove</button>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        
+            <div class="extension-card active">
+                <div class="icon"><img src="images/logo-palette-picker.svg" alt=""></div>
+                <div class="info">
+                    <h4>Palette Picker</h4>
+                    <p>Instantly extracts color palettes from any webpage.</p>
+                </div>
+                <div class="actions">
+                    <button class="remove-button">Remove</button>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        
+            <div class="extension-card active">
+                <div class="icon"><img src="images/logo-link-checker.svg" alt=""></div>
+                <div class="info">
+                    <h4>LinkChecker</h4>
+                    <p>Scans and highlights broken links on any page.</p>
+                </div>
+                <div class="actions">
+                    <button class="remove-button">Remove</button>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        
+            <div class="extension-card active">
+                <div class="icon"><img src="images/logo-dom-snapshot.svg" alt=""></div>
+                <div class="info">
+                    <h4>DOM Snapshot</h4>
+                    <p>Capture and export DOM structures quickly.</p>
+                </div>
+                <div class="actions">
+                    <button class="remove-button">Remove</button>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        
+            <div class="extension-card active">
+                <div class="icon"><img src="images/logo-console-plus.svg" alt=""></div>
+                <div class="info">
+                    <h4>ConsolePlus</h4>
+                    <p>Enhanced developer console with advanced filtering and logging.</p>
+                </div>
+                <div class="actions">
+                    <button class="remove-button">Remove</button>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
